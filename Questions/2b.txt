@@ -1,0 +1,29 @@
+Write a C/C++/Python/Java program that takes the hexdump data of IP and TCP packets(in any file format) as inputs and perform following operations:
+
+1) For the IP packets highlighted in the captured Wireshark files (IP.png). Determine the following from the HexDump Window panel:  (10 marks)
+
+
+
+a) Which IP version is used?
+b) What is IP header length?
+c) What is the total length of the IP packet?
+d) Which transport layer protocol is embedded with the IP packet?
+e) What is the value of 16 bit IP checksum?  
+f) Determine the source and destination IP addresses.
+
+2) For the TCP packets highlighted in the captured Wireshark files (TCP.png). Determine the following from the HexDump Window panel: (10 marks)
+
+a) Determine the source and destination port numbers.
+b) Determine the 32 bit Sequence number and Acknowledgement numbers of the TCP packet
+c) Determine the header length of the TCP packet.
+d) What is the value of 16 bit TCP checksum?
+e) Determine which TCP header flags are set.
+
+
+
+NOTES regarding implementation details::
+1) Convert the Hex output from the HexDump Window panel of the given TCP and IP images into text files, so that it can be provided as input to your program.
+2) All answers must be provided in decimal values. The IP and TCP header formats are provided as attachment for reference.
+3) Upload your source code of your program and snapshots of your output to the Google classroom.
+4) The TAs will use different set of inputs to evaluate your assignments.
+5) Plagiarism will be penalized with deduction in assignment marks.

@@ -1,0 +1,10 @@
+The objective of this assignment is to design LSTM based sentiment analysis classifier models using different word embedding techniques. You will use the IMDB movie review dataset (available at https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) to perform the following operations:
+
+1) Custom train a Word2vec model to generate 100 dimensional word embedding vectors for tokens in the IMDB movie review dataset. Use this custom trained Word2vec word embedding to design a LSTM based sentiment analysis model. Use 60% of the data in the IMDB movie review dataset to train the LSTM classifier, and the remaining 40% data to evaluate the trained model. Model with higher accuracy will be awarded more marks. (8 marks)
+
+2) Use the pretrained GloVE word embedding (available at https://nlp.stanford.edu/projects/glove/)  to design LSTM based sentiment analysis model for the IMDB movie review dataset. Download and use the "(6B tokens, 400K vocab, uncased, 50d, 100d, 200d, & 300d vectors, 822 MB download): glove.6B.zip" version. From this use the 100d embedding vectors.  60% of the data in the IMDB movie review dataset to be used to train the LSTM classifier, and the remaining 40% data to evaluate the trained model. Model with higher accuracy will be awarded more marks. (6 marks)
+
+3) Use the pretrained FastText word embedding(available at https://fasttext.cc/) to design LSTM based sentiment analysis model for the IMDB movie review dataset. Again use the model that generated 100 dimensional token embeddings. Use 60% of the data in the IMDB movie review dataset to train the LSTM classifier, and the remaining 40% data to evaluate the trained model. Model with higher accuracy will be awarded more marks. (6 marks)
+
+
+NOTE:: The word embeddings of Word2vec, GloVE and FastText are to be provided as input to the Embedding layer of the LSTM classifier model.

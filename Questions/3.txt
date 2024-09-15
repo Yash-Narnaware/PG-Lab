@@ -1,0 +1,25 @@
+Malware Analysis Assignment::
+
+Q. 1) Use the md5deep program to compute the md5 hash of the binary program "Lab03-04.exe". Upload the computed md5 hash to http://www.VirusTotal.com/. Does it match any existing antivirus definitions? Take the screenshot of the output. [2 marks]
+
+Q: 2) Are there any indications that this file is packed or obfuscated? If so, what are these indicators? If the file is packed, unpack it if possible. Take the screenshot of the output along with explanation. [2 marks]
+
+Q: 3) Do any imports hint at this program’s functionality? If so, which imports are they and what do they tell you? Take the screenshot of the output. [2 marks]
+
+
+Q: 4) What host-or network-based indicators could be used to identify this malware on infected machines? Explain with necessary explanations. [4 marks]
+
+GHIDRA Assignment::
+
+1) In this assignment you are provided with three .elf binary executable files (c2, c3 and c4). Each of these binary executable file takes a password as its parameter when it is executed/run in the terminal. Your goal is to use Ghidra to reverse engineer the source codes corresponding to these binary executable, and then determine the passwords that each of these files take as a parameter. A screenshot of the decompiled source codes along with explanation of how you determined the password should be uploaded to the classroom. (10 marks)
+
+All the related files (
+Lab03-04.exe, c2, c3 and c4) have been provided as rar attachment. In addition, today's lecture notes are also provided.
+
+Collect the copy of malware sample from the following github link: https://github.com/shivamkainth/pgsl3
+
+
+NOTE regarding assignment implementation::
+
+1) Turn in your answers in a single PDF file to the Google classroom.
+2) Plagiarism will be penalized with deduction in assignment marks.

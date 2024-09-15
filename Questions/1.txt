@@ -1,0 +1,9 @@
+1) In this assignment, you have to reproduce the sample research paper (provided as attachment) using LaTeX. You have the option of implementing it using local installation of TeX program or an online TeX application like Overleaf. You can download the IEEE LaTeX template using the following Link : https://www.ieee.org/conferences/publishing/templates.html
+
+2) Three csv files (d2.csv, d3.csv and dia1.csv) are provided as attachment. You have to plot the line graphs from these files and put them on the latex document. Use various formatting styles discussed in the class to plot the line graphs.
+
+   Some notes regarding the assignment:
+
+
+1) For reproducing the images in your TeX document, you can take screenshots of the images from the pdf file. Your images should have one of the following format: pdf, eps, png or jpeg.
+2) For the references, you have to use LateX bibliography (.bib) file. All references in .bib file should use the BibTeX format for references.

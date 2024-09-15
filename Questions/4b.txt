@@ -1,0 +1,18 @@
+Implementation of LeNet5 architecture:: (20 marks)
+
+In this assignment you have to implement the LeNet5 architecture for training a CNN based classifier model using the MNIST handwritten digits dataset. The LeNet-5 architecture has following configuration:
+
+1) Input layer takes grayscale handwritten images with dimension 32 X 32 X 1.
+2) Layer1: Convolution layer with 6 filters each of dimension 5 X 5 and a average pooling layer. This layer uses a stride of 1 for convolution operation, and uses 2 X 2 filter for pooling operation with stride of 2.
+3) Layer2: Convolution layer with 16 filters each of dimension 5 X 5 and a average pooling layer. This layer uses a stride of 1 for convolution operation, and uses 2 X 2 filter for pooling operation with stride of 2.
+4) FC3: This fully connected layer takes the flatten output produced by Layer2 as input. It has 120 neurons.
+5) FC4: This fully connected layer takes the input from FC3. It has 84 neurons.
+6) Output layer: A softMax function with 10 neurons that makes the prediction.
+7) LeNet5 uses "tanh" activation function in convolution layers of Layer1 and Layer2. It also uses "tanh" activation function at FC3 layer.
+
+Note regarding implementation:
+
+a) A representation of LeNet5's architecture and hyperparameters for visualization is provided as attachments.
+b) Since the images in MNIST handwritten digits dataset have dimension 28 X 28 X 1, use padding to get images of dimension 32 X 32 X 1 before training the model. Note that only training data is to be used for model training. The test data should only be used for evaluating the trained CNN model.
+c) You are free to play around with the CNN hyperparameters to improve the model's performance (Accuracy). The choice of hyperparameters such as "Loss Function", "Optimizer", "batch sizes", "epoch" etc should be chosen appropriately.
+d) The plot of training and validation loss, as well as the plot of training and validation accuracy should be provided during evaluation.
