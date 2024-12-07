@@ -1,0 +1,1 @@
+Deploy the webserver developed as part of Assignment #8 on Kubernetes (as a single node deployment). Use MySQL for the persistence volume. The following approach can be taken.
