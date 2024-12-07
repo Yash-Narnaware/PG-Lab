@@ -1,0 +1,260 @@
+\documentclass{report}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+
+
+
+
+\titleformat{\section}
+  {\large\bfseries\centering} % Font style and size
+  {\thesection}     % Section number
+  {1em}             % Space between number and title
+  {}                % Code before the title
+
+
+\renewcommand{\baselinestretch}{2}
+% Redefine the title page
+% Redefine the title page
+\makeatletter
+\renewcommand{\maketitle}{
+    \begin{titlepage}
+        \centering
+        \vspace*{2cm}
+
+        {\LARGE \bfseries \@title \par}
+        \vspace{1.5cm}
+        {\Large \@author \par}
+        
+        { Entry Number: 2024AIM1011 \par}
+        \vspace{-0.3cm}
+        {PG Lab Assignment 6 \par}
+        {\Large Department of Computer Science and Engineering \par}
+        \vspace{2cm}
+        
+        \vfill
+    \end{titlepage}
+}
+\makeatother
+
+\author{Yash Narnaware}
+\title{Data Visualization on Mandi Dataset}
+\begin{document}
+
+
+
+
+\maketitle
+
+\renewcommand{\arraystretch}{0.6}
+
+
+\setlength{\tabcolsep}{2pt}
+
+\section*{Dataset Information}
+This is the dataset of current daily price of various commodities from various markets accross the India. 
+
+The dataset have following columns - 
+\begin{itemize}[itemsep=0pt, leftmargin=195pt, parsep=0pt]
+    	\item State
+    	\item District
+    	\item Market
+    \item Commoditty
+    \item Variety
+    \item Grade
+    \item Arrival Date
+    \item Minimum Price
+    \item Maximum Price
+    \item Modal Price
+\end{itemize}
+
+We have taken prices of commodities on 30th September 2024 and to understand the dataset better I have used various graphs and visualization techniques on this dataset.
+
+\newpage
+
+
+%Sum of max prices of different commodities
+{\large \textbf{Average of Max Prices of Different Commodities - }}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics{images/avg\_of\_commodity\_prices.png}
+
+\end{figure}
+
+The above figure shows us the average of max price of each commodity accross all markets. This figure gives us the idea about relative pricing of the commodities and what is the most valuable commodity in the market.
+
+\newpage
+
+\noindent
+\begin{figure}[H]
+%\centering
+\raggedright  % Left-align the image
+\includegraphics[scale=0.6]{images/bar\_avg\_max\_com.png}
+
+\end{figure}
+
+Here is another way of showing the data in bar graph format.Here I am showing the commodity wise average of max prices of few top commodities for a given day. in this graph the actual average prices of commodities are visible, graph earlier to this gives us the idea about the difference in values but actual average is not visible there.
+
+
+\newpage
+
+{\large \textbf{State-wise commodities and their average price distribution - }}
+
+\noindent
+\begin{figure}[H]
+%\centering
+\raggedright  % Left-align the image
+\includegraphics[scale=0.7]{images/statewise\_commodity\_max\_prices.png}
+
+\end{figure}
+
+The above bar graph shows us the states and what average price comparison with all the other commodities. By this graph we can interprett what different commodities are being sold in each state(each different colour fragment mean differnt commodity for a particular state) and their average price comparison. I didn't include legend because it was too big for the document. 
+
+
+
+
+\newpage
+
+{\large \textbf{State-wise markets - }}
+
+\noindent
+\begin{figure}[H]
+%\centering
+\raggedright  % Left-align the image
+\includegraphics[scale=0.8]{images/state\_marketwise\_dist.png}
+
+\end{figure}
+
+Each different colour in above figure means different state and each individual circle is a market in that state and size of that circle is average modal price of commodities sold in that market. The big blue belt is Tamil Nadu. Tamil Nadu has most number of markets.
+
+
+\newpage
+
+In our dataset we have around 15000 entries each entry represents a commodity in particular state,district and market. So by looking at last figure Tamil Nadu have most number of markets so naturally it should have most number of entries in our dataset.
+
+\noindent
+\begin{figure}[H]
+%\centering
+\raggedright  % Left-align the image
+\includegraphics[scale=0.8]{images/states\_by\_com\_entry.png}
+
+\end{figure}
+
+This figure shows percentage of number of entries of top 10 states in our dataset.
+
+\newpage
+
+We can also show number of entries in our dataset using geographical map of India.
+
+\noindent
+\begin{figure}[H]
+%\centering
+\raggedright  % Left-align the image
+\includegraphics[scale=0.8]{images/geo\_map\_com\_count.png}
+
+\end{figure}
+
+This map shows number of comodity entries for each state. Earlier graph shows the percentage and this graph shows us the number of entries. 
+
+
+\newpage
+
+{\large \textbf{State-wise average modal price of commodities - }}
+
+\noindent
+\begin{figure}[H]
+%\centering
+\raggedright  % Left-align the image
+\includegraphics[scale=0.6]{images/avg\_modal\_price\_by\_state.png}
+
+\end{figure}
+
+This heatmap shows the average modal price of commodities in each state. Average modal price tells us what is the most common price at which trades are happening. For Goa we have the highest average modal commodity price.
+
+\newpage
+
+{\large \textbf{Market-wise average modal price of commodities - }}
+
+\noindent
+\begin{figure}[H]
+%\centering
+\raggedright  % Left-align the image
+\includegraphics[scale=0.5]{images/marketwise\_avg\_modal.png}
+
+\end{figure}
+
+This bar graph shows us the average modal price for each market in descending order and colour of each bar represents a particular state that market is in. Due to space restrictions I only showed few top markets according to average modal price.
+
+
+\vspace{50pt}
+
+{\large \textbf{Total grade count for different grades - }}
+
+
+\noindent
+\begin{figure}[H]
+%\centering
+\raggedright  % Left-align the image
+\includegraphics[scale=0.65]{images/grade\_count.png}
+
+\end{figure}
+
+
+Dataset have commodities in various grades the above bar graph shows us the total grade count for each grade.
+
+
+
+\newpage
+
+{\large \textbf{Market-wise different grade count - }}
+
+\noindent
+\begin{figure}[H]
+%\centering
+\raggedright  % Left-align the image
+\includegraphics[scale=0.6]{images/marketwise\_grade\_count.png}
+
+\end{figure}
+
+I selected some states and for each market in those states I am showing grade count for each grade.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
