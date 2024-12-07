@@ -1,0 +1,1 @@
+Create visualizations for the attached dataset. More details about the dataset can be found at https://www.data.gov.in/catalog/current-daily-price-various-commodities-various-markets-mandi
