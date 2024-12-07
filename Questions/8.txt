@@ -1,0 +1,2 @@
+1. Install VM using libvirt library. The installation should be through the command line.
+2. Build a webserver container using Docker. Host your website on the dockerized webserver.
