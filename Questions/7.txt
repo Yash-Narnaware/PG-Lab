@@ -1,0 +1,14 @@
+Assignment details:
+Write a parallelized matrix
+multiplication program using OpenMP primitives. Try to maximize the work
+division among the threads to achieve best (least) time. Compare the
+time of the parallel version with the sequential version. 
+Experiments to be done:
+1. Square matrices 10x10, 50x50, 100x100, 500x500 (if possible)
+2.
+Timings of the parallel version when run using (i) single thread, (ii)
+two threads, (iii) four threads, and (iv) eight threads. You can
+restrict the number of threads to be used in the "#pragma omp parallel"
+portion of the program by writing num_threads(x) beside it, where x is
+the number of threads.
+3. Sequential matrix multiplication considering above (1) sizes.
